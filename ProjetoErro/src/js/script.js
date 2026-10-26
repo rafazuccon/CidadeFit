@@ -3,16 +3,16 @@
 // ==========================================
 
 function mudar() {
-    let novo = document.getElementById("nome");
+    let novo = document.getElementById("usuario_nome");
     let titulo = document.getElementById("titulo");
     
     if (novo.value.trim() !== "") {
        
-        titulo.innerHTML = "CidadeFit Tech - Aluno: ${novo.value}";
+        titulo.textContent = `CidadeFit Tech - Aluno: ${novo.value}`;
     }
 }
 
-function inserir {
+function inserir() {
     
     let posicaoInput = document.getElementById("posicao").value
 - 1;
