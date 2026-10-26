@@ -5,25 +5,25 @@
 function mudar() {
     let novo = document.getElementById("usuario_nome");
     let titulo = document.getElementById("titulo");
-    
+
     if (novo.value.trim() !== "") {
-       
+
         titulo.textContent = `CidadeFit Tech - Aluno: ${novo.value}`;
     }
 }
 
 function inserir() {
-    
+
     let posicaoInput = document.getElementById("posicao").value
-- 1;
+        - 1;
     let novoEquipamento = document.getElementById("novo").value;
-    
-   
-    let elementosEquipamentos = document.getElementsByClassName("time");
-    
+
+
+    let elementosEquipamentos = document.getElementsByClassName("equipamento");
+
     if (posicaoInput >= 0 && posicaoInput < elementosEquipamentos.length && novoEquipamento.trim() !== "") {
         elementosEquipamentos[posicaoInput].innerHTML = novoEquipamento;
-        document.getElementById("novo").value = ""; 
+        document.getElementById("novo").value = "";
     } else {
         ("Posição inválida ou campo vazio!");
     }
@@ -38,10 +38,10 @@ botao.addEventListener("click", function () {
         alert("A imagem do treino já foi criada!");
         return;
     }
-    
+
     let novaImg = document.createElement("img");
     novaImg.id = "minhaImagem";
-   
+
     novaImg.src = "./assets/Imagem.jpg";
     novaImg.alt = "Imagem ilustrativa do treino";
 
