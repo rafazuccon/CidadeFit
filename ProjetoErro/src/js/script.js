@@ -51,5 +51,5 @@ botao.addEventListener("click", function () {
     novaImg.style.marginTop = "15px";
     novaImg.style.display = "block";
 
-    container.appendChild(novaImagem);
+    container.appendChild(novaImg);
 });
